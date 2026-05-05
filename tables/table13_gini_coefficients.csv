@@ -1,0 +1,4 @@
+Distribution,Gini Coefficient,Interpretation
+External Retweets,0.9846,High inequality: a handful of accounts drive almost all external amplification
+Follower Count,0.7726,Highly unequal follower distribution — most accounts have small followings
+Total Tweets,0.9652,Moderately unequal posting volume across IRA accounts

@@ -1,0 +1,7 @@
+Analysis,Finding,Statistic,Significance
+Dataset overview,"203,461 tweets from 454 IRA accounts, 2014–2017",—,—
+Account dormancy,Median dormancy = 781 days; mean = 626 days,Median: 781 d,Qualitative: far exceeds Symantec 177-day benchmark
+Timezone deception,104 accounts (23%) use Russian/E. European TZ,—,—
+Sentiment: Trump vs. Clinton,Trump mean VADER = -0.0089; Clinton mean VADER = -0.0759,"Mann-Whitney U, p < 0.001",Statistically significant (p < .001)
+Retweet share,19.5% of all tweets are retweets,—,—
+Dominant topic,Largest LDA topic: Tea Party / Conservative,—,—

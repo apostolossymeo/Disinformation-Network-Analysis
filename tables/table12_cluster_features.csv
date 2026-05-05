@@ -1,0 +1,7 @@
+,dormancy_days,dormancy_days,posting_velocity,posting_velocity,follower_friend_ratio,follower_friend_ratio,rt_share,rt_share,avg_retweets,avg_retweets,total_tweets,total_tweets
+,mean,median,mean,median,mean,median,mean,median,mean,median,mean,median
+cluster_label,,,,,,,,,,,,
+Amplifier Bots,849.78,796.0,8.76,8.0,1.11,1.1,0.18,0.04,0.03,0.0,2689.5,3000.0
+Cultural Infiltrators,368.67,138.0,1.02,1.0,48.83,1.11,0.01,0.0,1.8,0.5,243.49,10.0
+Dormant Nodes,773.49,872.0,0.75,0.5,2.85,1.1,0.94,1.0,0.01,0.0,75.13,19.0
+Human Operators,300.9,210.0,0.93,0.84,2.85,1.22,0.12,0.03,60.01,42.54,305.1,140.5
