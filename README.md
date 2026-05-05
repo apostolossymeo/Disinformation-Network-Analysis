@@ -3,16 +3,11 @@
 
 ### Overview
 
-This repository contains the full computational analysis pipeline for a study of the Internet Research Agency's (IRA) Twitter influence operation during the 2016 U.S. presidential election. Using 203,461 tweets from 454 confirmed IRA-affiliated accounts (Kaggle / NBC dataset), the analysis pursues four research questions:
-
-1. **RQ1 — Behavioural Fingerprinting**: What account-level signatures - dormancy period, posting velocity, follower/friend asymmetry, timezone mismatch - characterise the IRA network?
-2. **RQ2 — Narrative Strategy**: What content clusters structured the IRA's messaging, and how did topic prevalence shift across the electoral timeline?
-3. **RQ3 — Candidate Targeting**: How did IRA sentiment toward Trump vs. Clinton differ, and does this difference hold under statistical testing?
-4. **RQ4 — Operational Architecture**: What posting patterns and amplification structures reveal coordinated campaign behaviour?
-
+This repository presents a computational analysis pipeline for studying coordinated disinformation activity on Twitter during the 2016 U.S. presidential election. Using a dataset of 200K+ tweets from confirmed influence operation accounts, the project investigates behavioral patterns, narrative dynamics, sentiment targeting, and coordination structures to uncover how such campaigns operate at scale.
 
 ### Key Findings
 
+  
 | Finding | Statistic |
 |---|---|
 | Median account dormancy | **781 days** (mean: 626 days) |
@@ -24,6 +19,8 @@ This repository contains the full computational analysis pipeline for a study of
 | Retweet share | **19.5%** of all original posts |
 | Dominant LDA topic | Black Culture / Targeting (15.6% of English-track corpus) |
 
+<br>
+
 **The dormancy finding is particularly striking.** A median of 781 days between account creation and first IRA-linked tweet - over two years - indicates a pre-registration infrastructure established long before the 2016 electoral cycle. This substantially exceeds the 177-day benchmark documented in Symantec's IRA analysis and suggests systematic, multi-year operational preparation rather than reactive opportunism.
 
 **The sentiment asymmetry is statistically robust.** Trump-mentioning tweets cluster near neutral (VADER ≈ −0.009), while Clinton-mentioning tweets are systematically more negative (VADER ≈ −0.076). The Mann-Whitney U test (p < 10⁻⁵¹) confirms this is not a sampling artefact, consistent with the dual-strategy hypothesis: bolstering Trump while depressing Clinton.
@@ -32,6 +29,7 @@ This repository contains the full computational analysis pipeline for a study of
 
 
 ### Installation
+
 
 ```bash
 git clone https://github.com/your-username/ira_analysis.git
@@ -43,6 +41,7 @@ python analysis.py
 
 
 ### Figures
+
 
 | Figure | Description |
 |---|---|
@@ -61,6 +60,7 @@ python analysis.py
 
 
 ### Methodological Notes
+
 
 **Topic Modelling.** LDA was fitted on 35,912 English-track tweets (273 English-language accounts) using a CountVectorizer with bigram support (n-gram range 1–2), vocabulary of 6,000 features, min document frequency of 5, and max document frequency of 0.85. Eight topics were selected; `online` learning with batch size 4,096 was used for computational efficiency. Stop words include standard English stopwords plus Twitter-specific noise (`rt`, `amp`) and the candidate names themselves (to surface *content* themes rather than mention patterns).
 
